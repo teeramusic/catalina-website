@@ -18,10 +18,10 @@
 
 <body>
 
-  <div class="container home">
+  <div class="container">
     <div class="row">
       <div class="col">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#">
             <h1>&nbsp;</h1>
           </a>
@@ -32,41 +32,41 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-0 mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="1980s.html">1980s</a>
+                <a class="nav-link" href="page2.html">1980s</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="1990s.html">1990s</a>
+                <a class="nav-link" href="#">1990s</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="2000s.html">2000s</a>
+                <a class="nav-link" href="#">2000s</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   2010s
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="paintings.html">Paintings</a>
-                  <a class="dropdown-item" href="metals.html">Metals</a>
-                  <a class="dropdown-item" href="installations.html">Installations</a>
-                  <a class="dropdown-item" href="illistrations.html">Illistrations</a>
-                  <a class="dropdown-item" href="exhibitions.html">Exhibitions</a>
-                  <a class="dropdown-item" href="catalina.html">Catalina</a>
+                  <a class="dropdown-item" href="#">Paintings</a>
+                  <a class="dropdown-item" href="#">Metals</a>
+                  <a class="dropdown-item" href="#">Installations</a>
+                  <a class="dropdown-item" href="#">Illistrations</a>
+                  <a class="dropdown-item" href="#">Exhibitions</a>
+                  <a class="dropdown-item" href="#">Catalina</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sale.html">Sale</a>
+                <a class="nav-link" href="#">Sale</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="media.html">Media</a>
+                <a class="nav-link" href="#">Media</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -77,14 +77,33 @@
     </div>
     <div class="row">
       <div class="col-sm">
-        <img src="./home/left.png" class="img-fluid" />
+        <div class="padding-0 margin-0 gallery" style="">
+        </div>
+
       </div>
       <div class="col-sm">
-        <img src="./home/right.png" class="img-fluid" />
+        <div class="embed-responsive embed-responsive-1by1">
+          <video class="embed-responsive-item" loop muted autoplay width="900" height="900" id="vid">
+            <source src="https://luxurychiangmai.com/christoph_video.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-sm"><small>scroll to view</small></div>
+      <div class="col-sm"></div>
+    </div>
   </div>
+  <script>
+  //generate gallery
+  var imgPrefix = "./slide1/Slide";
+  var thumbPrefix = "./slide1/Slide";
+  var suffix = ".jpeg";
+  var padsize = 2;
+  var string = "";
+
+  </script>
+  <script src="js.js"></script>
 
 </body>
 

@@ -5,20 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>home</title>
+  <title>Installations</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="magicscroll.css">
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
-
+  <script src="magicscroll.js"></script>
 </head>
 
 <body>
 
-  <div class="container home">
+  <div class="container">
     <div class="row">
       <div class="col">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -31,10 +32,10 @@
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-0 mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="1980s.html">1980s</a>
               </li>
               <li class="nav-item">
@@ -50,7 +51,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="paintings.html">Paintings</a>
                   <a class="dropdown-item" href="metals.html">Metals</a>
-                  <a class="dropdown-item" href="installations.html">Installations</a>
+                  <a class="dropdown-item active" href="installations.html">Installations <span class="sr-only">(current)</span></a>
                   <a class="dropdown-item" href="illistrations.html">Illistrations</a>
                   <a class="dropdown-item" href="exhibitions.html">Exhibitions</a>
                   <a class="dropdown-item" href="catalina.html">Catalina</a>
@@ -77,15 +78,31 @@
     </div>
     <div class="row">
       <div class="col-sm">
-        <img src="./home/left.png" class="img-fluid" />
+        <div class="gallery">
+        </div>
       </div>
-      <div class="col-sm">
-        <img src="./home/right.png" class="img-fluid" />
+      <div class="col-sm" style="height:500px">
+        <div class="MagicScroll" data-options="mode:  cover-flow; width: 100%;">
+        </div>
       </div>
     </div>
-
   </div>
 
+
+
 </body>
+<script>
+//generate gallery
+var imgPrefix = "./installations/Slide";
+var thumbPrefix = "./installations/Slide";
+var suffix = ".jpeg";
+var padsize = 3;
+var string = "";
+var mstring = "";
+var pic_count = 35;
+var lightbox = false;
+var idx_start = 88;
+</script>
+<script src="js.js"></script>
 
 </html>
