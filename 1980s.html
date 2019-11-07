@@ -8,35 +8,36 @@
   <title>1980s</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="magicscroll.css">
+  <!-- <link rel="stylesheet" href="magicscroll.css"> -->
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
-  <script src="magicscroll.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-2">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand invisible" href="#">
             <h1>&nbsp;</h1>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-0 mt-2 mt-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">home</a>
-              </li>
+          <div class="collapse navbar-collapse mt-4 text-uppercase lead font-weight-bold" id="navbarTogglerDemo02" style="letter-spacing: 0.3em;">
+            <ul class="navbar-nav ml-0 mt-2 mt-lg-0 flex-column">
               <li class="nav-item active">
-                <a class="nav-link" href="1980s.html">1980s <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="1980s.html">1980s</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="1990s.html">1990s</a>
@@ -48,7 +49,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   2010s
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink" style="left: 100%;top: 0;">
                   <a class="dropdown-item" href="paintings.html">Paintings</a>
                   <a class="dropdown-item" href="metals.html">Metals</a>
                   <a class="dropdown-item" href="installations.html">Installations</a>
@@ -74,15 +75,11 @@
         </nav>
 
       </div>
-
-    </div>
-    <div class="row">
+      <!-- end menu -->
       <div class="col-sm">
         <div class="gallery">
-        </div>
-      </div>
-      <div class="col-sm" style="height:500px">
-        <div class="MagicScroll" data-options="mode:  cover-flow; width: 100%;">
+          <div class="isotope-size">
+          </div>
         </div>
       </div>
     </div>
@@ -92,15 +89,15 @@
 
 </body>
 <script>
-//generate gallery
-var imgPrefix = "./1980/Slide";
-var thumbPrefix = "./1980/Slide";
-var suffix = ".jpeg";
-var padsize = 3;
-var string = "";
-var mstring = "";
-var pic_count = 108;
-var lightbox = false;
+  //generate gallery
+  var imgPrefix = "./1980/";
+  var thumbPrefix = "./1980/";
+  var suffix = ".png";
+  var padsize = 3;
+  var string = "";
+  var mstring = "";
+  var pic_count = 108;
+  var lightbox = false;
 </script>
 <script src="js.js"></script>
 
