@@ -1,10 +1,12 @@
 
+
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
   });
 
-
+var string ="";
+var  mstring = "";
 
 // isPlaying
 Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
@@ -19,16 +21,10 @@ function pad(num, size) {
   return s.substr(s.length - size);
 }
 
-
-// get offset if any
-if (typeof idx_start === 'undefined') {
-    var idx_start = 1;
-}
-
 // prepare string for gallery
 for (i = 0; i < pic_count; i++) {
   var idx = i + idx_start - 1;
-    string += '<div class="gallery-item p-1 p-sm-2"><a href="' + imgPrefix + pad(idx + 1, padsize) + suffix + '" data-toggle="lightbox"><img src="' + thumbPrefix + pad(idx + 1, padsize) + suffix +
+    string += '<div class="gallery-item p-1 p-sm-2"><a href="' + imgPrefix + pad(idx + 1, padsize) + suffix + '" data-toggle="lightbox"><img src="' + imgPrefix + pad(idx + 1, padsize) + suffix +
     '" class="rounded-sm border-0"></a></div>'
 }
 

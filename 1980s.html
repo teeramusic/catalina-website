@@ -19,23 +19,21 @@
 </head>
 
 <body>
-
+<!-- navigation start -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand invisible" href="#">
-            <h1>&nbsp;</h1>
+      <div class="col-md-3" style="height:20vw"></div>
+      <div class="col-md-3 nav-container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="logo.png" width="100%" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse mt-4 text-uppercase lead font-weight-bold" id="navbarTogglerDemo02" style="letter-spacing: 0.3em;">
-            <ul class="navbar-nav ml-0 mt-2 mt-lg-0 flex-column">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
-              </li>
+          <div class="collapse navbar-collapse text-uppercase lead font-weight-bold ml-auto mr-0" id="navbarTogglerDemo02" style="letter-spacing: 0.3em;">
+            <ul class="navbar-nav flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="1980s.html">1980s</a>
               </li>
@@ -75,8 +73,8 @@
         </nav>
 
       </div>
-      <!-- end menu -->
-      <div class="col-sm">
+      <!-- navigation end -->
+      <div class="col-md">
         <div class="gallery">
           <div class="isotope-size">
           </div>
@@ -91,13 +89,10 @@
 <script>
   //generate gallery
   var imgPrefix = "./1980/";
-  var thumbPrefix = "./1980/";
-  var suffix = ".png";
+  var suffix = ".jpg";
   var padsize = 3;
-  var string = "";
-  var mstring = "";
   var pic_count = 108;
-  var lightbox = false;
+  var idx_start = 1;
 </script>
 <script src="js.js"></script>
 
