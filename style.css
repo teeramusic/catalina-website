@@ -5,6 +5,17 @@ body {
 
 html {}
 
+/* mobile */
+@media (max-width: 575px) {
+
+  /* .navbar-nav .dropdown-menu {
+    position:relative;
+  } */
+  ul.navbar-nav {
+    text-align: center !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 00px;
   /* Remove scrollbar space */
@@ -13,8 +24,11 @@ html {}
 }
 
 /* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #FF0000;
+} */
+#navbarTogglerDemo02 .dropdown-toggle:after {
+  content: none;
 }
 
 .gallery {
@@ -33,77 +47,94 @@ html {}
 .modal-content {
   background-color: transparent !important;
 }
+
 .MagicScroll a {
-    display: none !important;
-}
-.MagicScroll[data-mode="cover-flow"]{
-    background-color:#000!important;
-}
-@media only screen and (min-width: 991px) {
-  ul.navbar-nav {
-    display: table !important;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-
-  li.nav-item {
-    display: table-cell;
-    text-align: center;
-  }
+  display: none !important;
 }
 
+.MagicScroll[data-mode="cover-flow"] {
+  background-color: #000 !important;
+}
+
+ul.navbar-nav {
+  text-align: right;
+}
 
 li.nav-item a {
-  color:#fff!important;
+  color: #fff !important;
 }
-.dropdown-menu.show{
-  background-color: #000;
-}
-.dropdown-menu.show.item:hover{
-  background-color: #000;
-  border: initial;
+
+.dropdown-menu {
+  background-color: #000 !important;
+  margin: 0;
 }
 
 .nav-tabs .nav-link.active {
   background-color: #333;
 }
 
-.container.home{
-}
+.container.home {}
 
 .overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 
 @font-face {
-font-family: 'Zapfino';
-font-style: normal;
-font-weight: normal;
-src: local('Zapfino'), url('Zapfino.woff') format('woff');
+  font-family: 'Zapfino';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Zapfino'), url('Zapfino.woff') format('woff');
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
   background-color: initial;
 }
-.mthumb{
+
+.mthumb {
   transition: all linear 0.1s;
 }
-.mthumb:hover{
-  transform:scale(1.02);
+
+.mthumb:hover {
+  transform: scale(1.02);
   box-shadow: 0 0 3px #888;
 }
+
 .dropdown-item.active, .dropdown-item:active {
   background-color: #222;
+}
+
+/* desktop */
+@media (min-width: 576px) {
+
+  /* automagically show dropdown on hover */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    display: none !important;
+  }
+
+  a.dropdown-item {
+    left: 100%;
+    top: 0;
+    text-align: left;
+  }
 }
