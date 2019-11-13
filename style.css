@@ -21,7 +21,9 @@ nav a {
     text-align: center !important;
   }
 }
-
+#index-gallery{
+  height: fit-content;
+}
 ::-webkit-scrollbar {
   width: 00px;
   /* Remove scrollbar space */
@@ -162,6 +164,9 @@ z-index: 1000;
 @media (min-width: 768px) {
   body{
     padding: 50px;
+  }
+  #index-gallery{
+    height: 100%;
   }
   /* automagically show dropdown on hover */
   .nav-item.dropdown:hover .dropdown-menu {
