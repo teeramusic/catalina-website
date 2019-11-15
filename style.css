@@ -9,6 +9,8 @@ body {
 nav a {
   font-family: Bradley-Hand!important;
   font-weight: bold!important;
+  font-size: 2rem;
+  line-height: 2.5;
 }
 .navbar-brand{
   display: none!important;
@@ -35,9 +37,7 @@ nav a {
 /* ::-webkit-scrollbar-thumb {
   background: #FF0000;
 } */
-.container-fluid{
-  /* max-width: 1800px!important; */
-}
+
 .logo {
   position:absolute;
   z-index: 10;
@@ -168,12 +168,19 @@ z-index: 1000;
   #index-gallery{
     height: 100%;
   }
+  .container-fluid{
+    overflow:scroll;
+  }
   /* automagically show dropdown on hover */
   .nav-item.dropdown:hover .dropdown-menu {
     display: block !important;
   }
   .navbar-brand{
   width:100%;
+  }
+  ul.navbar-nav {
+    /* text-align: right; */
+    text-align: center;
   }
   .nav-item.dropdown .dropdown-menu {
     display: none !important;
