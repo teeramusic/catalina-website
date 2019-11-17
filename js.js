@@ -17,6 +17,7 @@ Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
 
 // number string padding
 function pad(num, size) {
+  if(!size) return num;
   var s = "000000000" + num;
   return s.substr(s.length - size);
 }
