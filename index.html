@@ -18,14 +18,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="pb-0">
   <!-- navigation start -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2" style="height:1px"></div><div class="col-md-2 nav-container pt-md-0 pt-2">
+      <div class="col-md-2" style="height:1px"></div>
+      <div class="col-md-2 nav-container pt-md-0 pt-2">
         <nav class="navbar navbar-expand-md navbar-dark">
           <a class="navbar-brand m-0" href="index.html">
-            <img src="logo.png" width="100%" alt="Logo">
+            <img src="logo.png" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -74,8 +75,13 @@
       </div>
       <!-- navigation end -->
       <div class="col-md pr-md-5" id="index-gallery">
-        <div class="logo">
-          <img src="logo_t.png" width="50%" alt="Logo" style="transform:rotate(2deg)">
+        <div class="logo d-none">
+          <img src="logo_t.png" alt="Logo" style="width:50%;transform:rotate(2deg)">
+        </div>
+        <div class="video-container">
+          <video id="main-video" class="video rounded p-1" autoplay loop muted style="pointer-events: none;">
+            <source src="video.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="gallery">
           <div class="isotope-size">
@@ -86,16 +92,18 @@
   </div>
 
 
+  <script>
+    //generate gallery
+    var imgPrefix = "./landing/S (";
+    var suffix = ").jpg";
+    var padsize = 1;
+    var pic_count = 7;
+    var idx_start = 1;
+  </script>
+  <script src="js.js">
+  </script>
 
 </body>
-<script>
-  //generate gallery
-  var imgPrefix = "./landing/S (";
-  var suffix = ").jpg";
-  var padsize = 1;
-  var pic_count = 7;
-  var idx_start = 1;
-</script>
-<script src="js.js"></script>
+
 
 </html>

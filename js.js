@@ -1,12 +1,10 @@
-
-
-  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
   //  $(this).ekkoLightbox();
-  });
+});
 
-var string ="";
-var  mstring = "";
+var string = "";
+var mstring = "";
 
 // isPlaying
 Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
@@ -15,9 +13,11 @@ Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
   }
 })
 
+
+
 // number string padding
 function pad(num, size) {
-  if(!size) return num;
+  if (!size) return num;
   var s = "000000000" + num;
   return s.substr(s.length - size);
 }
@@ -25,8 +25,16 @@ function pad(num, size) {
 // prepare string for gallery
 for (i = 0; i < pic_count; i++) {
   var idx = i + idx_start - 1;
-    string += '<div class="gallery-item p-1 p-sm-2"><a href="' + imgPrefix + pad(idx + 1, padsize) + suffix + '" data-toggle="lightbox"><img src="' + imgPrefix + pad(idx + 1, padsize) + suffix +
-    '" class="rounded-sm border-0"></a></div>'
+  string += '<div class="gallery-item p-1 p-sm-2"><a href="' + imgPrefix + pad(idx + 1, padsize) + suffix + '" data-toggle="lightbox"><img src="' + imgPrefix + pad(idx + 1, padsize) + suffix +
+    '" class="rounded-sm border-0"></a>' +
+    function() {
+      if (window.saleData && pad(idx + 1, padsize) in saleData) {
+        return '<div class = "sale-info">'+saleData[pad(idx + 1, padsize)]+'</div>';
+      } else {
+        return '';
+      }
+    }() +
+    '</div>'
 }
 
 $(".gallery").append(string + '</div>');
