@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('part/head', {title: "ILLUSTRATIONs"}); %>
+</head>
+
+<body>
+    <%- include('part/nav', {}); %>
+    <div class="col-md pr-md-5">
+        <div class="gallery">
+            <div class="isotope-size">
+            </div>
+        </div>
+    </div>
+    <%- include('part/content-end', {}); %>
+
+
+
+</body>
+<script>
+    //generate gallery
+    var imgPrefix = "./the_rest/";
+    var suffix = ".jpg";
+    var padsize = 3;
+    var pic_count = 20;
+    var idx_start = 124;
+</script>
+<script src="js.js"></script>
+
+</html>

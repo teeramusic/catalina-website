@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('part/head', {title: "SALE"}); %>
+</head><body>
+  <%- include('part/nav', {}); %>
+      <div class="col-md pr-md-5">
+        <div class="gallery">
+          <div class="isotope-size">
+          </div>
+        </div>
+      </div>
+<%- include('part/content-end', {}); %>
+
+
+  <script>
+    //generate gallery
+    var imgPrefix = "./sale/";
+    var suffix = ".jpg";
+    var padsize = 2;
+    var pic_count = 40;
+    var idx_start = 1;
+    var saleData = {
+      '04':'“Vintage girl” 100x75 cm. Mix on canvas $780 USD',
+      '05':'“Woman with flowers” 100x100 cm. Mix on canvas . $750 USD',
+      '09':'“Woman and hummingbirds” Mix on canvas . 100x100 cm. $780 USD',
+      '10':'“La dama del sombrero” Mix on canvas .100x100 cm. $780 USD',
+      '11':'“Luna, lunera” Mix on canvas .100x100 cm. $780 USD',
+      '24':'“Girl with birds“ Mix on canvas .100x100 cm. $680 USD',
+      '26':'“Girl with hummingbirds” Mix on canvas , 100x 70 cm. $680 USD',
+      '27':'“Doll and hummingbirds” 100x 80 cm. Acrylic on silk. $820 USD',
+      '28':'“Ave” 120x100 cm. Mix on canvas . $1’200 USD',
+      '29':'“Corazón de miel” Mix on canvas . 100x100 cm. $820 USD',
+      '30':'“Lighting” 100x100 cm. Mix on canvas . $ 1’400 USD',
+      '31':'“El cielo del colibrí” Mix on canvas. 120x60 cm. $1’000 USD',
+      '32':'“Gato” 60x75 cm. Mix on canvas . $350',
+      '33':'“Miel” 150x100 cm. Acrylic on silk $1’700 USD',
+      '34':'En tus manos” Detalle . Exposición .',
+      '35':'“Ave” Exhibition',
+      '36':'“Que no se termine la noche” Mix on canvas .  70x70 cm. $1’000 USD',
+      '37':'“Corazón de tinta” Mix on canvas 70x70 cm. $500 USD',
+      '38':'“Armario” Mix on canvas 80x80 cm. $780 USD',
+      '39':'“Eva” 100x60cm. Mix on canvas . $ 640 USD'
+    };
+  </script>
+  <script src="js.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,232 @@
+body {
+  background-color: #000;
+  color: #fff
+}
+
+@font-face {
+  font-family: Bradley-Hand;
+  src: url(Bradley_Hand_ITC_TT_Bold.ttf) format('truetype')
+}
+
+nav a {
+  font-family: Bradley-Hand !important;
+  font-weight: 700 !important
+}
+
+.navbar-brand {
+  display: none !important
+}
+
+@media (max-width:767px) {
+  ul.navbar-nav {
+    text-align: center !important
+  }
+
+  .gallery {
+    padding-top: 75px
+  }
+}
+
+#index-gallery {
+  height: fit-content
+}
+
+::-webkit-scrollbar {
+  width: 00px;
+  background: 0 0
+}
+
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0;
+  position: relative
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center
+}
+
+.logo img {
+  display: block;
+  object-fit: contain
+}
+
+#navbarTogglerDemo02 .dropdown-toggle:after {
+  content: none
+}
+
+.navbar-brand {
+  width: 50%
+}
+
+.gallery {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+.gallery img {
+  width: 100%
+}
+
+.gallery-item, .isotope-size {
+  width: 33.3332%;
+  height: content
+}
+
+.modal-content {
+  background-color: transparent !important
+}
+
+.MagicScroll a {
+  display: none !important
+}
+
+.MagicScroll[data-mode=cover-flow] {
+  background-color: #000 !important
+}
+
+ul.navbar-nav {
+  text-align: center
+}
+
+li.nav-item a {
+  color: #fff !important
+}
+
+.dropdown-menu {
+  background-color: #000 !important;
+  margin: 0
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #333
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
+  cursor: pointer
+}
+
+.modal-body, .modal-content {
+  border: none !important
+}
+
+@font-face {
+  font-family: Zapfino;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Zapfino'), url('Zapfino.woff') format('woff')
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: initial
+}
+
+.mthumb {
+  transition: all linear .1s
+}
+
+.mthumb:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 3px #888
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #222
+}
+
+.nav-container {
+  position: fixed;
+  background: #000;
+  z-index: 1000;
+  padding-bottom: 10px
+}
+
+@media (min-width:768px) {
+  body {
+    padding: 50px
+  }
+
+  div.nav-container {
+    transform: translateY(-50%);
+    top: 50%
+  }
+
+  nav a {
+    font-size: 1.5rem
+  }
+
+  #index-gallery {
+    height: 100%
+  }
+
+  .container-fluid {
+    overflow: scroll
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block !important
+  }
+
+  .navbar-brand {
+    width: 100%
+  }
+
+  ul.navbar-nav {
+    text-align: center
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    display: none !important
+  }
+
+  a.dropdown-item {
+    left: 100%;
+    top: 0
+  }
+
+  nav.navbar {
+    flex-direction: column
+  }
+
+  div.col-md.pr-md-5.pt-md-4 {
+    overflow: scroll;
+    height: 100%
+  }
+}
+
+body, body>.container-fluid, body>.container-fluid>.row, html {
+  height: 100%
+}
+
+.sale-info {
+  bottom: 0;
+  left: 0;
+  font-size: .7vw
+}

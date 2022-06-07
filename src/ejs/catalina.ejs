@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('part/head', {title: "CATALINA"}); %>
+</head>
+
+<body>
+    <%- include('part/nav', {}); %>
+    <div class="col-md pr-md-5">
+        <div class="gallery">
+            <div class="isotope-size">
+            </div>
+        </div>
+    </div>
+    <%- include('part/content-end', {}); %>
+
+
+
+</body>
+<script>
+    //generate gallery
+    var imgPrefix = "./the_rest/";
+    var suffix = ".jpg";
+    var padsize = 3;
+    var pic_count = 82;
+    var idx_start = 186;
+</script>
+<script src="js.js"></script>
+
+</html>

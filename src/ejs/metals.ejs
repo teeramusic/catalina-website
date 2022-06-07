@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('part/head', {title: "METALS"}); %>
+</head><body>
+  <%- include('part/nav', {}); %>
+      <div class="col-md pr-md-5">
+        <div class="gallery">
+          <div class="isotope-size">
+          </div>
+        </div>
+      </div>
+<%- include('part/content-end', {}); %>
+
+
+
+</body>
+<script>
+  //generate gallery
+  var imgPrefix = "./paintings_metal/";
+  var suffix = ".jpg";
+  var padsize = 3;
+  var pic_count = 15;
+  var idx_start = 72;
+</script>
+<script src="js.js"></script>
+
+</html>
