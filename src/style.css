@@ -241,3 +241,7 @@ body, body>.container-fluid, body>.container-fluid>.row, html {
 	max-height: 100vh;
 	margin: auto;
 }
+
+.border-thick {
+    border-width:3px !important;
+}
