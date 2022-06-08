@@ -21,8 +21,7 @@ module.exports = function(grunt) {
 				dest: '',
 				ext: '.css'
 			}
-		}
-		,
+		},
 		ejs: {
 			target: {
 				expand: true,
@@ -44,7 +43,22 @@ module.exports = function(grunt) {
 				dest: '',
 				ext: '.html'
 			}
-		}
+		},
+		watch: {
+			src_folder: {
+				files: ['src/**/*.*', '!src/temp/*.*'],
+				tasks: ['default'],
+				options: {
+					spawn: false,
+				},
+			},
+			configFiles: {
+				files: ['Gruntfile.js', 'config/*.js'],
+				options: {
+					reload: true
+				}
+			}
+		},
 
 
 
@@ -58,7 +72,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-ejs');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'ejs', 'htmlmin' ]);
+	grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'ejs', 'htmlmin']);
 };

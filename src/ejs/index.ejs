@@ -2,33 +2,33 @@
 <html>
 
 <head>
-    <%- include('part/head', {title: "CATALINA CARRASCO PORTFOLIO"}); %>
+	<%- include('part/head', {title: "CATALINA CARRASCO PORTFOLIO"}); %>
 </head>
 
 <body>
-    <%- include('part/nav', {}); %>
-    <div class="col-md-5 col-sm pr-md-5" id="index-gallery">
-        <div>
-            <a href="#">
-                <div class="position-absolute w-100 h-100 d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo02"></div>
-            </a>
-            <img src="cover.jpg" class="w-100 d-md-none">
-            <img src="cover.jpg" class="h-100 d-none d-md-block">
-        </div>
-    </div>
-    <%- include('part/content-end', {}); %>
+	<%- include('part/nav', {}); %>
+	<div class="col d-flex flex-row" id="index-gallery">
+		<div class="d-flex">
+			<a href="#">
+				<div class="position-absolute w-100 h-100 d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo02"></div>
+			</a>
+			<img src="cover.jpg" class="center-fit">
+
+		</div>
+	</div>
+	<%- include('part/content-end', {}); %>
 
 
-    <script>
-        //generate gallery
-        var imgPrefix = "./landing/S (";
-        var suffix = ").jpg";
-        var padsize = 1;
-        var pic_count = 7;
-        var idx_start = 1;
-    </script>
-    <script src="js.js">
-    </script>
+	<!-- <script>
+		//generate gallery
+		var imgPrefix = "./landing/S (";
+		var suffix = ").jpg";
+		var padsize = 1;
+		var pic_count = 7;
+		var idx_start = 1;
+	</script> -->
+	<!-- <script src="js.js">
+	</script> -->
 
 </body>
 
